@@ -15,7 +15,7 @@ function Faq() {
         initial={{opacity: 0, y:5}}
         animate= {fadeInAnimation ? {opacity: 1, y:0} : {opacity: 0, y:5}}
         transition={{duration: 0.6, delay:0.2}}
-        className='sm:text-3xl text-xl text-center font-dynapuff sm:p-20 p-10'
+        className='sm:text-3xl text-xl text-center font-medium font-dynapuff sm:p-20 p-10'
       >
         <h1>FAQ</h1>
       </motion.div>
@@ -31,9 +31,6 @@ function Faq() {
       </motion.div>
       
     </div>
-    {/* <div>
-      <Footer />
-    </div> */}
 </>
   )
 }

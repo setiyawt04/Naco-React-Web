@@ -21,7 +21,7 @@ function Navbar() {
           <a href=""><img className="w-20" src={logo} alt="Logo" /></a>
         </li>
                
-        <li className='text-xs sm:text-base lg:[&>a]:pr-8 [&>a]:pr-2 text-white [&>a:hover]:text-[#466733] text-green font-bold'>
+        <li className='text-base sm:text-base lg:[&>a]:pr-8 [&>a]:pr-2 text-white [&>a:hover]:text-[#466733] text-green font-bold'>
           <a href="#Home">Home</a>
           <a href="#TentangKami">Tentang Kami</a>
           <a href="#Products">Produk</a>

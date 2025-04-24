@@ -51,9 +51,8 @@ function Products() {
             initial={{opacity: 0, y:5}}
             animate= {fadeInAnimation ? { opacity: 1, y:0 }: { opacity: 0, y: 5 }}
             transition={{duration: 0.6, delay:0}}
-            className=''
         >
-            <h1 className='sm:text-3xl text-xl font-dynapuff text-white text-center p-20'>Our Products</h1>
+            <h1 className='sm:text-3xl text-xl font-dynapuff font-medium text-white text-center pt-20 pb-10'>Our Products</h1>
         </motion.div>
         
         <div className='flex justify-center z-50 gap-10 items-start flex-wrap p-10'>

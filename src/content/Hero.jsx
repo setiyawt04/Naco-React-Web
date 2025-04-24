@@ -36,13 +36,13 @@ function Hero() {
       </motion.div>
       
     </div>
-    <Parallax speed={5} className="absolute bottom left-0 z-0">
+    <Parallax speed={5} className="absolute bottom:0 left-0 z-0">
         <img 
-              className="object-cover h-full w-full"
+              className="object-cover h-[100px] sm:h-full w-full"
               src={sandImage}
               alt="sand"
         />  
-        <div className='absolute h-50 w-full bg-[#fbd678]'></div>
+        <div className='absolute h-30 w-full bg-[#fbd678]'></div>
     </Parallax>
       
     </section>

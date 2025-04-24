@@ -44,14 +44,14 @@ function About() {
 
         {/* TENTANG KAMI */}
 
-        <div className='pt-[100vh] sm:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+        <div className='pt-[90vh] sm:pt-[70vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
           <motion.div  
             style={{ x: x1, opacity }}
             transition={{ duration: 0.5}}
             className='overflow-hidden'
           >
             <h1 className='sm:pl-0 pl-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🎉 Tentang Kami</h1>
-            <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-medium'>NACO menyediakan nata de coco segar yang lezat dan menyehatkan, langsung dari alam tropis. Rasakan kesegaran di setiap suapan! 🥥</p>
+            <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>NACO menyediakan nata de coco segar yang lezat dan menyehatkan, langsung dari alam tropis. Rasakan kesegaran di setiap suapan! 🥥</p>
           </motion.div>
           <motion.div 
               style={{ x: x2, opacity }}
@@ -67,7 +67,7 @@ function About() {
         {/* APA YANG BEDA */}
 
 
-        <div className='pt-[10vh] sm:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+        <div className='pt-[10vh] sm:pt-[30vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
           <motion.div
               ref={fadeIn}
               initial={{opacity: 0, x:-100}}
@@ -76,7 +76,7 @@ function About() {
               className=''
             >
               <h1 className='sm:pl-0 pl-5 pr-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🤙 Apa yang Bikin Kita Beda?</h1>
-              <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-medium'>
+              <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>
                 🌴 Teksturnya kenyal, tapi gak lebay.<br />
                 🥥 Rasa buahnya beneran kerasa, bukan cuma pewarna.<br />
                 🌱 Tanpa bahan pengawet yang ribet dibaca.<br />
@@ -91,7 +91,7 @@ function About() {
               transition={{duration:0.6}}
               className='w-full max-w-md relative flex justify-center items-end'
             >
-              <img src={pohonImage} className='h-full w-full' alt="coconut-tree"/>
+              <img src={pohonImage} className='h-full w-full mt-10' alt="coconut-tree"/>
               
           </motion.div>
           
