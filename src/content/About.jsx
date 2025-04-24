@@ -40,7 +40,7 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
     <Parallax speed={-15} className="w-full">
-      <div className="bg-[#fbd678] sm:h-[250vh] h-[350vh]">
+      <div className="bg-[#fbd678] sm:h-[250vh] h-[300vh]">
 
         {/* TENTANG KAMI */}
 
