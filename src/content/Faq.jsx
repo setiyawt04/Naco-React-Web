@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import FaqAccordion  from './FaqAccordion'
+import FaqAccordion  from '../components/FaqAccordion'
 import beachImage from '../assets/images/faq-bg.jpg'
 import {motion, useInView} from 'framer-motion'
 import Footer from './Footer'

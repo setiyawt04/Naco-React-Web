@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import RecipeReviewCard from './RecipeReviewCard';
+import RecipeReviewCard from '../components/RecipeReviewCard';
 import productBg from '../assets/images/bg.jpg'
 import { motion, useInView } from "framer-motion";
 import Faq from './Faq';

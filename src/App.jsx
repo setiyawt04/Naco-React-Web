@@ -1,8 +1,8 @@
-import Hero from './Component/Hero'
-import Navbar from './Component/Navbar'
+import Hero from './content/Hero'
+import Navbar from './content/Navbar'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import About from './Component/About';
-import Footer from './Component/Footer';
+import About from './content/About';
+import Footer from './content/Footer';
 
 
 
