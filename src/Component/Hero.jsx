@@ -12,29 +12,37 @@ function Hero() {
   console.log('Animation', fadeInAnimation)
   return (
     <>
-    <section id="Home" className="z-30 bg-cover bg-center bg-fixed top-0 left-0 pb-20" style={{ backgroundImage: `url(${heroImage})`}}>
-    <Leaves />
-      <div className='flex justify-center items-center '>
+    <section id="Home" className="z-30 bg-cover bg-center bg-no-repeat top-0 left-0 md:w-full min-h-screen pb-20"
+    style={{ 
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center center', 
+      backgroundAttachment: 'fixed',
+    }} >
+    <div className='overflow-x-hidden relative'>
+      <Leaves />
+    </div>
+      <div className='flex justify-center items-center min-h-screen absolute top-0 left-0 w-full'>
         
         <motion.div
           ref={fadeIn}
           initial={{opacity: 0, y:5}}
           animate= {fadeInAnimation ? { opacity: 1, y:0 }: { opacity: 0, y: 5 }}
           transition={{duration: 0.6}}
-          className='fixed'
+          className='text-center px-4 max-w-4xl'
         >
-          <h1 className='text-[#466733]  h-150 font-dynapuff font-bold text-center md:mb-10 mb-30 text-4xl'>Nata de Coco 🥥, Bikin Hidup Lebih Segar!🏝️</h1>
+          <h1 className='text-[#466733] font-dynapuff font-bold text-2xl sm:text-2xl md:text-3xl lg:text-5xl'>Nata de Coco 🥥, Bikin Hidup Lebih Segar!🏝️</h1>
           
       </motion.div>
       
     </div>
-    <Parallax speed={-5} className="bottom-0 left-0 w-full">
+    <Parallax speed={5} className="absolute bottom left-0 z-0">
         <img 
-              className="w-full object-cover sm:h-30 md:h-40 md:w-full lg:h-full"
+              className="object-cover h-full w-full"
               src={sandImage}
               alt="sand"
         />  
-        <div className='h-70 bg-[#fbd678]'></div>
+        <div className='absolute h-50 w-full bg-[#fbd678]'></div>
     </Parallax>
       
     </section>

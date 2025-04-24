@@ -5,8 +5,8 @@ import { gsap } from "gsap";
 
 function Leaves() {
     gsap.to('.leaf-1', {
-        x: '300vh',
-        y: '10vh',
+        x: '120vw',
+        y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8, 
         ease: "sine.inOut", 
@@ -14,8 +14,8 @@ function Leaves() {
 
     })
     gsap.to('.leaf-2', {
-        x: '300vh',
-        y: '10vh',
+        x: '120vw',
+        y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8, 
         ease: "sine.inOut", 
@@ -23,8 +23,8 @@ function Leaves() {
 
     })
     gsap.to('.leaf-3', {
-        x: '300vh',
-        y: '20vh',
+        x: '120vw',
+        y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8, 
         ease: "sine.inOut", 

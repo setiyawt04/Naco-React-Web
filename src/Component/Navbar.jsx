@@ -14,14 +14,14 @@ function Navbar() {
         initial={{opacity: 0, y: 5}}
         animate={fadeInAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 5 }}
         transition={{duration: 0.6}}
-        className='flex justify-center items-center pl-5'
+        className='flex justify-center items-center sm:pl-5 flex-wrap'
       
       >
         <li className='md:grow-1'>
           <a href=""><img className="w-20" src={logo} alt="Logo" /></a>
         </li>
                
-        <li className='pr-3 text-sm sm:text-base lg:[&>a]:pr-8 [&>a]:pr-5 text-white [&>a:hover]:text-[#466733] text-green font-bold'>
+        <li className='text-xs sm:text-base lg:[&>a]:pr-8 [&>a]:pr-2 text-white [&>a:hover]:text-[#466733] text-green font-bold'>
           <a href="#Home">Home</a>
           <a href="#TentangKami">Tentang Kami</a>
           <a href="#Products">Produk</a>

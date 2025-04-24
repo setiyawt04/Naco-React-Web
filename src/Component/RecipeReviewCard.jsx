@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DescriptionIcon from '@mui/icons-material/Description';
+import { green } from '@mui/material/colors';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -43,16 +44,24 @@ export default function RecipeReviewCard({title, subheader, image, price, descri
   };
 
   return (
-    <Card sx={{ maxWidth: 345}}>
-      <CardHeader sx={{fontFamily: 'DynaPuff', textAlign:'center', color: '#f7cc54'}}
+    <Card sx={{ maxWidth: 345, backgroundColor: '#d0dcc2'}}>
+      <CardHeader sx={{fontFamily: 'DynaPuff', textAlign:'center', color: '#81b5a1'}}
         title={title}
         subheader={subheader}
         titleTypographyProps={{
-          fontSize: '24px',
+          fontSize: {
+            xs: '18px',  
+            sm: '20px',  
+            md: '24px',  
+          },
           fontWeight: 'bold',
         }}
         subheaderTypographyProps={{
-          fontSize:'16px',
+          fontSize:{
+            xs: '12px',  
+            sm: '14px',  
+            md: '16px',
+          },
           fontWeight: '100',
         }}
       />
@@ -63,14 +72,24 @@ export default function RecipeReviewCard({title, subheader, image, price, descri
         alt="produk-image"
       />
       <CardContent>
-        <Typography variant="body2" sx={{fontFamily:'Dynapuff',  color: 'text.secondary', textAlign: 'center', fontSize: '18px'}}>
-          {price}
+        <Typography variant="body2" sx={{fontFamily:'Dynapuff',  color: 'text.secondary', textAlign: 'center', 
+        fontSize: {
+            xs: '12px',  
+            sm: '14px',  
+            md: '16px',}}}>
+            {price}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <DescriptionIcon />
-          <Typography> Description</Typography>
+          <Typography sx={{fontFamily:'Dynapuff',
+            fontSize: {
+              xs: '12px',  
+              sm: '14px',  
+              md: '16px',
+            }
+          }}>Description</Typography>
         </IconButton>
         <ExpandMore
           expand={expanded}
@@ -83,7 +102,11 @@ export default function RecipeReviewCard({title, subheader, image, price, descri
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography sx={{ marginBottom: 2, fontSize: '16px'}}>
+          <Typography sx={{ color: 'text.secondary', marginBottom: 2, fontSize: {
+            xs: '12px',  
+            sm: '14px',  
+            md: '16px',
+          }}}>
             {description}
           </Typography>
         </CardContent>

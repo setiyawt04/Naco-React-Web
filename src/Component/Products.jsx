@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import RecipeReviewCard from './RecipeReviewCard';
-import productBg from '../assets/images/pro-bg.jpg'
+import productBg from '../assets/images/bg.jpg'
 import { motion, useInView } from "framer-motion";
 import Faq from './Faq';
 import Footer from './Footer';
@@ -44,7 +44,7 @@ function Products() {
     console.log(fadeInAnimation)
   return (
     <>
-    <div id="Products" className='pt-20 z-5 bg-top md:w-full mx-auto' style={{backgroundImage:`url(${productBg})`, backgroundSize:'cover', minHeight: '100vh', backgroundRepeat: 'no-repeat'}}>
+    <div id="Products" className='z-30 bg-cover bg-center bg-no-repeat top-0 left-0 md:w-full min-h-screen pb-20' style={{backgroundImage:`url(${productBg})`, backgroundSize:'cover', backgroundPosition: 'center center'}}>
         
         <motion.div
             ref={fadeIn}
@@ -53,10 +53,10 @@ function Products() {
             transition={{duration: 0.6, delay:0}}
             className=''
         >
-            <h1 className='text-3xl font-dynapuff text-[#e8765a] text-center pb-10'>Our Products</h1>
+            <h1 className='sm:text-3xl text-xl font-dynapuff text-white text-center p-20'>Our Products</h1>
         </motion.div>
         
-        <div className='flex justify-center z-50 gap-10 items-start flex-wrap'>
+        <div className='flex justify-center z-50 gap-10 items-start flex-wrap p-10'>
             {products.map((product, index) => {
                 const fadeProduct = useRef(null)
                 const productAnimation = useInView(fadeProduct)
@@ -68,7 +68,7 @@ function Products() {
                     initial={{opacity: 0, y:5}}
                     animate= {productAnimation? { opacity: 1, y:0 }: { opacity: 0, y: 5 }}
                     transition={{duration: 0.6, delay: index * 0.2}}
-                    className='mb-10'
+                    className='mb-3'
                 >
                     <RecipeReviewCard 
                         title={product.title}
