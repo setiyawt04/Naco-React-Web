@@ -19,10 +19,10 @@ function Hero() {
       backgroundPosition: 'center center', 
       backgroundAttachment: 'fixed',
     }} >
-    <div className='overflow-x-hidden relative'>
+    <div className='overflow-x-hidden relative w-full h-screen'>
       <Leaves />
     </div>
-      <div className='flex justify-center items-center min-h-screen absolute top-0 left-0 w-full'>
+      <div className='flex justify-center items-center h-full absolute top-0 left-0 w-full'>
         
         <motion.div
           ref={fadeIn}

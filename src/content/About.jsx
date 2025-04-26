@@ -9,8 +9,34 @@ function About() {
   const fadeIn = useRef(null)
   const fadeInAnimation = useInView(fadeIn)
   const { scrollY } = useScroll();
-  const x1 = useTransform(scrollY, [700, 900], [-200, 0]);
-  const x2 = useTransform(scrollY, [700, 900], [200, 0]);
+  
+
+  const [scrollRange, setScrollRange] = useState([700, 900]);
+
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      if (width < 640) {
+        // Mobile
+        setScrollRange([400, 600]);
+      } else if (width < 1024) {
+        // Tablet
+        setScrollRange([400, 600]);
+      } else {
+        // Desktop
+        setScrollRange([700, 900]);
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // run once at start
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+  const x1 = useTransform(scrollY, scrollRange, [-200, 0]);
+  const x2 = useTransform(scrollY, scrollRange, [200, 0]);
   useEffect(() => {
     const unsubscribeX1 = x1.on("change", latest => {
       console.log("x1:", latest);
@@ -40,11 +66,12 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
     <Parallax speed={-15} className="w-full">
-      <div className="bg-[#fbd678] sm:h-[320vh] md:h-[250vh] h-[300vh]">
+      <div className="bg-[#fbd678] h-[100vh] md:h-[120vh] lg:h-[250vh]">
+
 
         {/* TENTANG KAMI */}
 
-        <div className='pt-[90vh] sm:pt-[70vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+        <div className='pt-[20vh] sm:pt-[10vh] md:pt-[70vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
           <motion.div  
             style={{ x: x1, opacity }}
             transition={{ duration: 0.5}}
@@ -67,7 +94,7 @@ function About() {
         {/* APA YANG BEDA */}
 
 
-        <div className='pt-[10vh] sm:pt-[30vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+        <div className='pt-[10vh] sm:pt-[10vh] md:pt-[30vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
           <motion.div
               ref={fadeIn}
               initial={{opacity: 0, x:-100}}
