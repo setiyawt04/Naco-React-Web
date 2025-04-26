@@ -44,7 +44,7 @@ function Products() {
     console.log(fadeInAnimation)
   return (
     <>
-    <div id="Products" className='z-30 bg-cover bg-center bg-no-repeat top-0 left-0 md:w-full min-h-screen pb-20' style={{backgroundImage:`url(${productBg})`, backgroundSize:'cover', backgroundPosition: 'center center'}}>
+    <div id="Products" className='z-30 bg-cover bg-center bg-no-repeat w-full h-auto pb-20' style={{backgroundImage:`url(${productBg})`, backgroundSize:'cover', backgroundPosition: 'center center'}}>
         
         <motion.div
             ref={fadeIn}
@@ -84,7 +84,7 @@ function Products() {
            
             
         </div>
-        <div className='h-full'>
+        <div>
             
             <Faq />
         </div>

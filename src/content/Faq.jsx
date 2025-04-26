@@ -9,7 +9,7 @@ function Faq() {
   const fadeInAnimation = useInView(fadeIn)
   return (
     <>
-    <div id="Faq" className='z-30 bg-cover bg-center bg-no-repeat md:w-full h-auto pb-20' style={{backgroundImage:`url(${beachImage})`, backgroundPosition: 'left center', backgroundSize: 'cover'}}>
+    <div id="Faq" className='z-30 bg-cover bg-center bg-no-repeat w-full h-auto pb-20' style={{backgroundImage:`url(${beachImage})`, backgroundPosition: 'left center', backgroundSize: 'cover'}}>
       <motion.div
         ref={fadeIn}
         initial={{opacity: 0, y:5}}
