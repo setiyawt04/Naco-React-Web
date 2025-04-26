@@ -40,7 +40,7 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
     <Parallax speed={-15} className="w-full">
-      <div className="bg-[#fbd678] sm:h-[250vh] h-[300vh]">
+      <div className="bg-[#fbd678] sm:h-[320vh] md:h-[250vh] h-[300vh]">
 
         {/* TENTANG KAMI */}
 
@@ -50,15 +50,15 @@ function About() {
             transition={{ duration: 0.5}}
             className='overflow-hidden'
           >
-            <h1 className='sm:pl-0 pl-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🎉 Tentang Kami</h1>
-            <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>NACO menyediakan nata de coco segar yang lezat dan menyehatkan, langsung dari alam tropis. Rasakan kesegaran di setiap suapan! 🥥</p>
+            <h1 className='sm:pl-10 pl-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🎉 Tentang Kami</h1>
+            <p className='sm:pl-10 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>NACO menyediakan nata de coco segar yang lezat dan menyehatkan, langsung dari alam tropis. Rasakan kesegaran di setiap suapan! 🥥</p>
           </motion.div>
           <motion.div 
               style={{ x: x2, opacity }}
               transition={{ duration: 0.5}}
-              className='w-full max-w-md relative flex justify-center items-end'
+              className='w-full max-w-md relative flex justify-center items-center'
             >
-              <img src={coconut} className='sm:h-100 sm:w-100 h-70 w-70' alt="coconut" />
+              <img src={coconut} className='sm:h-full sm:w-full h-70 w-70' alt="coconut" />
           </motion.div> 
         </div>
 
@@ -75,8 +75,8 @@ function About() {
               transition={{duration:0.6}}
               className=''
             >
-              <h1 className='sm:pl-0 pl-5 pr-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🤙 Apa yang Bikin Kita Beda?</h1>
-              <p className='sm:pl-0 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>
+              <h1 className='sm:pl-10 pl-5 pr-5 pb-5 font-dynapuff sm:text-3xl text-[#466733] font-medium text-xl'>🤙 Apa yang Bikin Kita Beda?</h1>
+              <p className='sm:pl-10 pl-5 pr-5 text-base sm:text-lg text-[#466733] font-light font-dynapuff'>
                 🌴 Teksturnya kenyal, tapi gak lebay.<br />
                 🥥 Rasa buahnya beneran kerasa, bukan cuma pewarna.<br />
                 🌱 Tanpa bahan pengawet yang ribet dibaca.<br />
