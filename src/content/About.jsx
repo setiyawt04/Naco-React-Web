@@ -10,8 +10,8 @@ function About() {
   const fadeInAnimation = useInView(fadeIn)
   const { scrollY } = useScroll();
 
-  const x1 = useTransform(scrollY, [700, 900], [-200, 0]);
-  const x2 = useTransform(scrollY, [700, 900], [200, 0]);
+  const x1 = useTransform(scrollY, [800, 900], [-200, 0]);
+  const x2 = useTransform(scrollY, [800, 900], [200, 0]);
   useEffect(() => {
     const unsubscribeX1 = x1.on("change", latest => {
       console.log("x1:", latest);
@@ -41,12 +41,12 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
       <Parallax speed={-15} className="w-full">
-        <div className="bg-[#fbd678] h-[190vh] sm:h-[250vh] md:h-[270vh] lg:h-[280vh]">
+        <div className="bg-[#fbd678] h-[310vh] sm:h-[320vh] md:h-[280vh] lg:h-[290vh]">
 
 
           {/* TENTANG KAMI */}
 
-          <div className='pt-[10vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+          <div className='pt-[90vh] sm:pt-[90vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
             <motion.div
               style={{ x: x1, opacity }}
               transition={{ duration: 0.5 }}
@@ -60,7 +60,7 @@ function About() {
               transition={{ duration: 0.5 }}
               className='w-full max-w-md relative flex justify-center items-center'
             >
-              <img src={coconut} className='sm:h-full sm:w-full h-70 w-70' alt="coconut" />
+              <img src={coconut} className='md:h-full md:w-full h-70 w-70' alt="coconut" />
             </motion.div>
           </div>
 
@@ -93,7 +93,7 @@ function About() {
               transition={{ duration: 0.6 }}
               className='w-full max-w-md relative flex justify-center items-end'
             >
-              <img src={pohonImage} className='sm:h-full sm:w-full h-70 w-90 mt-10' alt="coconut-tree" />
+              <img src={pohonImage} className='md:h-full md:w-full h-70 w-90 mt-10' alt="coconut-tree" />
 
             </motion.div>
 
