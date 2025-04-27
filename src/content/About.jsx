@@ -46,7 +46,7 @@ function About() {
 
           {/* TENTANG KAMI */}
 
-          <div className='pt-[90vh] sm:pt-[90vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+          <div className='pt-[90vh] sm:pt-[80vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
             <motion.div
               style={{ x: x1, opacity }}
               transition={{ duration: 0.5 }}
