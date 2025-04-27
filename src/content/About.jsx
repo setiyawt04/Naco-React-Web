@@ -41,12 +41,12 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
       <Parallax speed={-15} className="w-full">
-        <div className="bg-[#fbd678] h-[80vh] sm:h-[100vh] md:h-[80vh] lg:h-[220vh]">
+        <div className="bg-[#fbd678] h-[190vh] sm:h-[250vh] md:h-[270vh] lg:h-[280vh]">
 
 
           {/* TENTANG KAMI */}
 
-          <div className='pt-[10vh] md:pt-[20vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+          <div className='pt-[10vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
             <motion.div
               style={{ x: x1, opacity }}
               transition={{ duration: 0.5 }}
@@ -69,7 +69,7 @@ function About() {
           {/* APA YANG BEDA */}
 
 
-          <div className='pt-[5vh] md:pt-[10vh] lg:pt-[10vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+          <div className='pt-[5vh] md:pt-[30vh] lg:pt-[30vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
             <motion.div
               ref={fadeIn}
               initial={{ opacity: 0, x: -100 }}
