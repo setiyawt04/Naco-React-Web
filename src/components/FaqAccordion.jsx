@@ -13,8 +13,8 @@ const FaqAccordion = () => {
             <li>Kelapa</li>
             <li>Strawberry</li>
           </ol>
-            Pilih sesuai selera kamu atau coba semua!
-      </AccordionContent>
+          Pilih sesuai selera kamu atau coba semua!
+        </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger className='sm:text-lg text-sm'>Bahannya alami gak?</AccordionTrigger>
@@ -27,12 +27,12 @@ const FaqAccordion = () => {
       <AccordionItem value="item-4">
         <AccordionTrigger className='sm:text-lg text-sm'>Gimana cara order?</AccordionTrigger>
         <AccordionContent className='sm:text-lg text-xs'>
-        Untuk memesan, kamu bisa:
-        <ol className="list-disc pl-5">
-          <li>WhatsApp: 08xxxxxxxxxx</li>
-          <li>Instagram DM: @nata_coco.id</li>
-        </ol>
-        Kamu tinggal pilih varian rasa, jumlah yang diinginkan, dan alamat pengiriman.
+          Untuk memesan, kamu bisa:
+          <ol className="list-disc pl-5">
+            <li>WhatsApp: 08xxxxxxxxxx</li>
+            <li>Instagram DM: @nata_coco.id</li>
+          </ol>
+          Kamu tinggal pilih varian rasa, jumlah yang diinginkan, dan alamat pengiriman.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">

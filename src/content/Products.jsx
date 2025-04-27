@@ -84,10 +84,7 @@ function Products() {
            
             
         </div>
-        <div>
-            
-            <Faq />
-        </div>
+
         
     </div>
     </>

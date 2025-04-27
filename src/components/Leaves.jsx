@@ -8,8 +8,8 @@ function Leaves() {
         x: '120vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
-        duration: 8, 
-        ease: "sine.inOut", 
+        duration: 8,
+        ease: "sine.inOut",
         repeat: -1
 
     })
@@ -17,8 +17,8 @@ function Leaves() {
         x: '120vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
-        duration: 8, 
-        ease: "sine.inOut", 
+        duration: 8,
+        ease: "sine.inOut",
         repeat: -1
 
     })
@@ -26,18 +26,18 @@ function Leaves() {
         x: '120vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
-        duration: 8, 
-        ease: "sine.inOut", 
+        duration: 8,
+        ease: "sine.inOut",
         repeat: -1
 
     })
-  return (
-    <div className='h-150 w-10 flex justify-center items-center relative right-20'>
-        <img src={leaf} alt="leaf" className='leaf-1 float-right'/>
-        <img src={leaf} alt="leaf" className='leaf-2'/>
-        <img src={leaf} alt="leaf" className='leaf-3'/>
-    </div>
-  )
+    return (
+        <div className='h-150 w-10 flex justify-center items-center relative right-20'>
+            <img src={leaf} alt="leaf" className='leaf-1 float-right' />
+            <img src={leaf} alt="leaf" className='leaf-2' />
+            <img src={leaf} alt="leaf" className='leaf-3' />
+        </div>
+    )
 }
 
 export default Leaves
