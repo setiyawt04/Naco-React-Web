@@ -1,7 +1,5 @@
 import React, { useRef, useState } from 'react';
 import suara from '../assets/audio/suara.mp3';
-import soundOn from '../assets/images/sound-on.png';
-import soundMute from '../assets/images/sound-mute.png';
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
 
 
