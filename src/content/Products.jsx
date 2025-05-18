@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import RecipeReviewCard from '../components/RecipeReviewCard';
 import productBg from '../assets/images/bg.jpg'
 import { motion, useInView } from "framer-motion";
-import Faq from './Faq';
-import Footer from './Footer';
 import produk1 from '../assets/images/produk1.jpg'
 import produk2 from '../assets/images/produk2.jpg'
 import produk3 from '../assets/images/produk3.jpg'

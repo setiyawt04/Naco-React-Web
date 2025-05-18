@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 
 function Leaves() {
     gsap.to('.leaf-1', {
-        x: '120vw',
+        x: '80vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8,
@@ -14,7 +14,7 @@ function Leaves() {
 
     })
     gsap.to('.leaf-2', {
-        x: '120vw',
+        x: '80vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8,
@@ -23,7 +23,7 @@ function Leaves() {
 
     })
     gsap.to('.leaf-3', {
-        x: '120vw',
+        x: '80vw',
         y: '5vh',
         rotation: gsap.utils.random(-360, 360),
         duration: 8,

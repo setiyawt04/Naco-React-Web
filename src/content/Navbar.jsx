@@ -1,4 +1,5 @@
 import logo from '../assets/images/logo.png';
+import CustomAudioPlayer from '@/components/audio';
 import React, { useRef } from 'react';
 import { motion, useInView } from "framer-motion";
 
@@ -17,8 +18,9 @@ function Navbar() {
         className='flex justify-center items-center sm:pl-5 flex-wrap'
 
       >
-        <li className='md:grow-1'>
+        <li className='md:grow-1 flex items-center'>
           <a href=""><img className="w-20" src={logo} alt="Logo" /></a>
+          <CustomAudioPlayer />
         </li>
 
         <li className='text-base sm:text-base font-dynapuff lg:[&>a]:pr-8 [&>a]:pr-2 text-[#466733] [&>a:hover]:text-white text-green font-light'>
