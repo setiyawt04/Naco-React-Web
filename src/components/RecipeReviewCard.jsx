@@ -89,9 +89,9 @@ export default function RecipeReviewCard({ title, subheader, image, price, descr
           <Typography sx={{
             fontFamily: 'Dynapuff',
             fontSize: {
-              xs: '12px',
-              sm: '14px',
-              md: '16px',
+              xs: '16px',
+              sm: '18px',
+              md: '20px',
             }
           }}>Description</Typography>
         </IconButton>
