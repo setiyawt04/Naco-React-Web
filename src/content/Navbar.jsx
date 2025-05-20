@@ -23,13 +23,13 @@ function Navbar() {
           <CustomAudioPlayer />
         </li>
 
-        <li className='text-base sm:text-base font-dynapuff lg:[&>a]:pr-8 [&>a]:pr-2 text-[#466733] [&>a:hover]:text-white text-green font-light'>
+        <li className='ml-5 sm:ml-10 text-base sm:text-base font-dynapuff &>a:pr-15 sm:[&>a]:pr-10 lg:[&>a]:pr-8 [&>a]:pr-2 text-[#466733] [&>a:hover]:text-white text-green font-light'>
           <a href="#Home">Home</a>
           <a href="#TentangKami">Tentang Kami</a>
           <a href="#Products">Produk</a>
           <a href="#Faq">FAQ</a>
           <a
-            href="https://wa.link/x36za0"
+            href="https://wa.link/vzq6vx"
             target="_blank"
             rel="noopener noreferrer"
           >Kontak</a>

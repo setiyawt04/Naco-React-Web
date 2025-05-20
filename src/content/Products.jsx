@@ -3,35 +3,19 @@ import RecipeReviewCard from '../components/RecipeReviewCard';
 import productBg from '../assets/images/bg.jpg'
 import { motion, useInView } from "framer-motion";
 import produk1 from '../assets/images/produk1.jpg'
-import produk2 from '../assets/images/produk2.jpg'
-import produk3 from '../assets/images/produk3.jpg'
+
 
 
 const products = [
     {
-        title: "CocoTwist",
+        title: "CocoChew",
         subheader: "Nata de Coco Segar dengan Rasa Buah yang Melekat di Setiap Gigitan.",
         image: produk1,
-        price: "Rp. 3000/cup",
-        description: "Nikmati sensasi segar dan kenyal dalam setiap gigitan CocoTwist.. ikmati sensasi segar dan kenyal dalam setiap gigitan CocoTwist.. ikmati sensasi segar dan kenyal dalam setiap gigitan CocoTwist...",
+        price: "Rp. 3500/cup",
+        description: "CocoChew itu nata de coco yang super kenyal dan seger alami, cocok buat kamu yang suka minuman atau dessert yang makin enak dan nyegerin. Dibuat dari bahan pilihan tanpa tambahan pengawet, jadi aman dan sehat buat dinikmati kapan aja. Cocok banget buat campuran jus, es buah, yogurt, atau cemilan sehari-hari.",
         
       },
-      {
-        title: "StrawBerryPop",
-        subheader: "Ledakan rasa stroberi dalam setiap sendokannya.",
-        image: produk2,
-        price: "Rp. 3500/cup",
-        description: "Rasa stroberi yang segar cocok untuk pencinta buah manis.",
-        
-      },
-      {
-        title: "MangoBlast",
-        subheader: "Segarnya mangga yang menggugah selera.",
-        image: produk3,
-        price: "Rp. 3500/cup",
-        description: "Dibuat dari mangga asli yang manis dan menyegarkan.",
-        
-    }
+      
 ];
 
 
@@ -50,7 +34,7 @@ function Products() {
             animate= {fadeInAnimation ? { opacity: 1, y:0 }: { opacity: 0, y: 5 }}
             transition={{duration: 0.6, delay:0}}
         >
-            <h1 className='sm:text-3xl text-xl font-dynapuff font-medium text-white text-center pt-20 pb-10'>Our Products</h1>
+            <h1 className='sm:text-4xl text-3xl font-dynapuff font-medium text-white text-center pt-20 pb-10'>Our Products</h1>
         </motion.div>
         
         <div className='flex justify-center z-50 gap-10 items-start flex-wrap p-10'>

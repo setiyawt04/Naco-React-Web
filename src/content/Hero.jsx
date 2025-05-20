@@ -30,7 +30,7 @@ function Hero() {
           transition={{ duration: 0.6 }}
           className='text-center px-4 max-w-4xl'
         >
-          <h1 className='text-[#466733] font-dynapuff font-bold text-2xl sm:text-2xl md:text-3xl lg:text-5xl'>Nata de Coco 🥥, Bikin Hidup Lebih Segar!🏝️</h1>
+          <h1 className='text-[#466733] font-dynapuff font-bold text-3xl sm:text-4xl md:text-3xl lg:text-5xl'>Nata de Coco 🥥, Bikin Hidup Lebih Segar!🏝️</h1>
 
         </motion.div>
 
