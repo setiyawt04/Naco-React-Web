@@ -45,12 +45,12 @@ function About() {
   return (
     <div id="TentangKami" className="relative overflow-hidden" >
       <Parallax speed={-15} className="w-full">
-        <div className="bg-[#fbd678] h-[250vh] sm:h-[270vh] md:h-[310vh] lg:h-[320vh]">
+        <div className="bg-[#fbd678] h-[270vh] sm:h-[270vh] md:h-[310vh] lg:h-[320vh]">
 
 
           {/* TENTANG KAMI */}
 
-          <div className='pt-[30vh] sm:pt-[30vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
+          <div className='pt-[40vh] sm:pt-[30vh] md:pt-[90vh] lg:pt-[50vh] md:flex md:justify-center md:items-center md:pr-20 md:pl-40 md:w-full mx-auto'>
             <motion.div
               style={{ x: x1, opacity }}
               transition={{ duration: 0.5 }}
